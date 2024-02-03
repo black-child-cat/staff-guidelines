@@ -1,0 +1,24 @@
+name: CI
+
+# この `on` キーでワークフローをトリガーするイベントを定義します
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "20.x"
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+        env:
+        NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH }}

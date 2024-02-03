@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Noto+Sans+JP:wght@500;700;900&family=Sawarabi+Gothic&family=Shippori+Antique+B1&family=Shippori+Mincho:wght@500;700;800&display=swap");
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+@layer utilities {
+  .font-Kiwi-Maru {
+    font-family: "Kiwi Maru";
+  }
+  .font-Noto-Sans {
+    font-family: "Noto Sans JP";
+  }
+  .font-Sawarabi-Gothic {
+    font-family: "Sawarabi Gothic";
+  }
+  .font-Shippori-Antique {
+    font-family: "Shippori Antique B1";
+  }
+  .font-Shippori-Mincho {
+    font-family: "Shippori Mincho";
+  }
+  .palt {
+    font-feature-settings: "palt";
+  }
+}
