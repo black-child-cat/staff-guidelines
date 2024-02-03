@@ -7,7 +7,7 @@ function Toc({ items }) {
   const { posts, PostisLoading } = usePosts();
   const { categories } = useCategory();
 
-  if (PostisLoading) return <p>Loading...</p>;
+  if (PostisLoading) return <p className="p-6">Loading...</p>;
 
   return (
     <div className="container mx-auto px-4 py-5">

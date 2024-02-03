@@ -12,8 +12,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>あなたのサイトのタイトル</title>
-        <meta name="description" content="あなたのサイトの説明" />
+        <title>風俗店スタッフ向けガイドライン（仮）</title>
+        <meta
+          name="description"
+          content="風俗店スタッフ向けガイドライン（仮）｜女性と円滑に働くための理解を培って、お互いに働きやすい環境を考えよう。"
+        />
         <link
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>📚</text></svg>"

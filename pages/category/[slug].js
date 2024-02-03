@@ -9,7 +9,7 @@ function CategoryPage(props) {
   const { posts, isLoading: PostisLoading } = usePosts();
   const { categories } = useCategory();
 
-  if (PostisLoading) return <p>Loading...</p>;
+  if (PostisLoading) return <p className="p-6">Loading...</p>;
 
   // propsからparamsを抽出
   const { params } = props;
@@ -17,8 +17,6 @@ function CategoryPage(props) {
   const categoryData = categories.find(
     (category) => category.slug === params.slug
   );
-  // console.log(categoryData);
-  // console.log(params.slug);
   return (
     <div className="flex flex-col">
       <div className="py-3 px-4 border-b border-gray-100 flex flex-col gap-1">
